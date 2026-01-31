@@ -1,11 +1,6 @@
 [build]
-  # A base é a raiz mesmo
   base = "."
-  
-  # O site é gerado na pasta dist da raiz
-  publish = "dist"
-  
-  # O comando roda direto na raiz
+  publish = "dist/public"
   command = "pnpm run build"
 
 [[redirects]]
