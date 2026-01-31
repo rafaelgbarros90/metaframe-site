@@ -1,7 +1,12 @@
 [build]
-  base = "client"
-  publish = "dist"
-  command = "pnpm run build"
+  # Usa a raiz do projeto como base (para achar o pnpm-lock.yaml)
+  base = "."
+  
+  # Onde o site final vai estar (caminho completo)
+  publish = "client/dist"
+  
+  # Comando: Instala tudo na raiz, entra na pasta client e constrói
+  command = "pnpm install && cd client && pnpm run build"
 
 [[redirects]]
   from = "/*"
